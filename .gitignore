@@ -1,0 +1,14 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore the virtual environment
+env/
+
+# Ignore database (if you're using SQLite)
+db.sqlite3
+
+# Ignore environment variables and secrets
+.env
+
+*.txt
