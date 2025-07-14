@@ -2,8 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.urls import reverse_lazy
 from .models import Post
-from django.views.generic import ListView, DetailView, CreateView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.views.generic import (
+    ListView,
+    DetailView,
+    CreateView,
+    UpdateView,
+    DeleteView
+    )
 
 
 class PostListView(ListView):
@@ -18,13 +24,30 @@ class PostDetailView(DetailView):
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     fields = ['title', 'content']
-    success_url = reverse_lazy('blog-home')
+
     
     def form_valid(self, form):
         form.instance.author = self.request.user   
         return super().form_valid(form)
 
-
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Post
+    fields = ['title', 'content']
+    
+    def test_func(self):
+        post = self.get_object()
+        if post.author == self.request.user:
+            return True
+        return False
+    
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Post
+    success_url = '/'
+    
+    def test_func(self):
+        post = self.get_object()
+        return self.request.user == post.author
+            
 
 def about(request):
     return render(request, 'Blog/about.html', {'title': 'About'})
