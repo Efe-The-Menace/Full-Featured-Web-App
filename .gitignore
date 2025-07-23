@@ -11,4 +11,3 @@ db.sqlite3
 # Ignore environment variables and secrets
 .env
 
-*.txt

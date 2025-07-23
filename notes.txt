@@ -1,0 +1,21 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore the virtual environment
+env/
+
+# Ignore database (if you're using SQLite)
+db.sqlite3
+
+# Ignore environment variables and secrets
+.env
+
+*.txt
+
+Python codes in html file----- to access a variable, use the double curly braces
+eg <h1>{{ post.title }}
+----- to do more logic like if statements or for loops, use single curly and percent sing
+eg {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+    {% nd for %}  
