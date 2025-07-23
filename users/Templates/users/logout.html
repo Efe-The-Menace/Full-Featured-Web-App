@@ -1,9 +1,12 @@
-{%extends 'Blog/base.html'%}
-{%block content%}
-    <h2>You have been logged out</h2>
-    <div class="border-top pt-3">
-        <small class="text-muted">
-         <a href="{% url 'login' %}" class="btn btn-outline-warning">Log in again.</a>
-        </small>
+{% extends 'Blog/base.html' %}
+{% block content %}
+  <div class="content-section text-center">
+    <h2 class="mb-4 text-success">You have been logged out</h2>
+    
+    <div class="border-top pt-4">
+      <a href="{% url 'login' %}" class="btn btn-warning btn-lg">
+        <i class="bi bi-box-arrow-in-right"></i> Log in again
+      </a>
     </div>
-{%endblock content%}
+  </div>
+{% endblock content %}
