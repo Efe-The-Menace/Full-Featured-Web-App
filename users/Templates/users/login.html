@@ -2,25 +2,28 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-  <div class="content-section mx-auto" style="max-width: 500px;">
-    <h3 class="border-bottom pb-2 mb-4 text-center">Welcome Back</h3>
+  <div class="mx-auto mt-5 p-4 shadow-sm bg-white rounded" style="max-width: 500px;">
+    <h3 class="text-center border-bottom pb-3 mb-4">Welcome Back</h3>
 
     <form method="POST">
       {% csrf_token %}
       <fieldset class="form-group">
         {{ form|crispy }}
       </fieldset>
-      <div class="form-group mt-3">
-        <button class="btn btn-info btn-block" type="submit">
+      <div class="d-grid mt-3">
+        <button class="btn btn-primary" type="submit">
           <i class="bi bi-box-arrow-in-right"></i> Log In
         </button>
       </div>
+      <div class="text-muted">
+        <a href="{% url 'password_reset' %}">Forgot Password?</a> 
+      </div>
     </form>
 
-    <div class="border-top pt-3 text-center">
+    <div class="border-top pt-3 text-center mt-4">
       <small class="text-muted">
         Need an account?
-        <a href="{% url 'register' %}" class="ml-1">Sign up now</a>
+        <a href="{% url 'register' %}" class="ms-1 text-decoration-none">Sign up now</a>
       </small>
     </div>
   </div>

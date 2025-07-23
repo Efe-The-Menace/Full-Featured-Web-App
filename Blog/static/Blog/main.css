@@ -82,3 +82,8 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.article-title:hover {
+  color: #0d6efd; /* Bootstrap primary */
+  text-decoration: underline;
+}
