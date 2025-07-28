@@ -24,9 +24,7 @@ A full-featured personal blogging platform where users can express thoughts, sha
 - **Database**: PostgreSQL
 - **Frontend**: HTML5, CSS3, Bootstrap 5, Django Templating
 - **Forms**: [`django-crispy-forms`](https://django-crispy-forms.readthedocs.io/)
-- **Deployment**: 
-  - Backend: [Render](https://render.com)  
-  - Frontend: [Vercel](https://vercel.com)
+- **Deployment**: [Render](https://render.com)  
 
 ---
 
@@ -90,6 +88,6 @@ Pull requests are welcome!
 Feel free to fork the repository, push improvements, and submit a PR.
 
 👨‍💻 Author
-David “Efe” Obasuyi
-Backend Developer | Django & Python
+David Obasuyi
+Backend Developer | Django | Python
 Built as a passion project and personal learning experience.
