@@ -1,0 +1,1 @@
+web: gunicorn Django_full_featured_web_app.wsgi

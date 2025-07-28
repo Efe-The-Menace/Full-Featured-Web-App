@@ -1,9 +1,14 @@
 asgiref==3.8.1
 crispy-bootstrap4==2024.10
 crispy-bootstrap5==2024.10
+dj-database-url==3.0.1
 Django==5.1.2
 django-crispy-forms==2.3
+gunicorn==23.0.0
+packaging==25.0
 pillow==11.3.0
+psycopg2-binary==2.9.10
+python-decouple==3.8
 sqlparse==0.5.1
 tzdata==2024.2
 whitenoise==6.9.0
