@@ -2,7 +2,7 @@
 
 A full-featured personal blogging platform where users can express thoughts, share posts, and manage content. Built with **Django**, it features a polished UI, full authentication flow, media uploads, and is ready for deployment.
 
-🔗 **[Live Demo](https://scatter-thoughts.onrender.com)**
+🔗 **[Live Demo](https://scatteredthoughts.onrender.com)**
 
 ---
 
