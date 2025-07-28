@@ -14,7 +14,8 @@ A full-featured personal blogging platform where users can express thoughts, sha
 - 📄 **Pagination** – Clean paginated views for global and user-specific feeds  
 - 🖼️ **Media Uploads** – Upload profile pictures and post images  
 - 🛠️ **Admin Interface** – Manage users and posts via Django Admin  
-- 📱 **Responsive Design** – Mobile-friendly interface using Bootstrap 5  
+- 📱 **Responsive Design** – Mobile-friendly interface using Bootstrap 5
+- 🧾 Extended profiles & user bios
 
 ---
 
@@ -75,13 +76,11 @@ python manage.py runserver
 
 ❤️ Like / Bookmark feature
 
-🧾 Extended profiles & user bios
 
 🏷️ Tags and category filtering
 
 🔍 Full-text search functionality
 
-📈 SEO & Open Graph integration
 
 🤝 Contributing
 Pull requests are welcome!
