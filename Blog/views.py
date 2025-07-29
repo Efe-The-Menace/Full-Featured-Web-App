@@ -56,7 +56,7 @@ def about(request):
 
 class UserPosts(ListView):
     model = Post
-    template_name = 'blog/user_posts.html'
+    template_name = 'Blog/user_posts.html'
     context_object_name = 'posts'
     paginate_by = 5
     
