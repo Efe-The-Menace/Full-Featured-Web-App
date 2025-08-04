@@ -1,4 +1,4 @@
-# 📝 Scatter Thoughts Blog App
+# Scatter Thoughts Blog App
 
 A full-featured personal blogging platform where users can express thoughts, share posts, and manage content. Built with **Django**, it features a polished UI, full authentication flow, media uploads, and is ready for deployment.
 
